@@ -20,6 +20,102 @@
             height: auto;
         }
 
+        #menu-h {
+            background-color: rgb(10, 10, 10);
+        }
+        
+        #menu-h {
+            list-style: none;
+            padding: 0;
+            
+        }
+        
+        #menu-h ul li{
+            display: inline;
+        }
+        
+        #menu-h  ul li a{
+            color: seashell;
+            padding: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        #menu-h  ul li a:hover{
+            background-color: rgb(56, 6, 194);
+        }
+
+        footer {
+            background-color: rgb(10, 10, 10);
+            padding: 50px 0;
+            text-align: center; /* Centralize o conteúdo dentro do footer */
+        }
+        
+        .container-footer {
+            max-width: 1400px;
+            padding: 0 4%;
+            margin: auto;
+        }
+        
+        .row-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centralize as colunas horizontalmente */
+        }
+        
+        .footer-col {
+            flex: 0 0 33.33%;
+            padding: 0 15px;
+            position: relative;
+            box-sizing: border-box;
+            text-align: center; /* Centralize o texto horizontalmente */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centralize o texto verticalmente */
+        }
+        
+        
+        .footer-col h4{
+            font-size: 22px;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 500;
+            position: relative;
+            text-transform: uppercase;
+        }
+        .footer-col ul{
+            list-style: none;
+        }
+        .footer-col ul li{
+            margin: 10px 0;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: white;
+            text-decoration: none;
+            font-weight: 300;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #cecdcd;
+            padding-left: 10px;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 800px) {
+            .footer-col{
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width:600px) {
+            .footer-col{
+                width: 100%;
+            }
+        }
+
         h1 {
             color: white;
             font-family: 'Inter', sans-serif;
@@ -50,7 +146,7 @@
         body {
             background-image: url(./assets/Fundo.jpg);
             background-position: top center;
-            background-size: 100% auto;
+            background-size: cover;
             background-repeat: no-repeat;
             background-color: #121214;
         }
@@ -81,7 +177,7 @@
         .social-list {
             justify-content: center;
             transition: transform .3s;
-            ransform: scale(1.1);
+            transform: scale(1.1);
         }
 
         section ul li:hover {
@@ -186,3 +282,9 @@
                 transform: translateY(0)
             }
         }
+
+        form {
+            background-color: antiquewhite;
+            
+        }
+
