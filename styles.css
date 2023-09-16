@@ -126,7 +126,7 @@
 
         .profile {
             text-align: justify;
-            padding: 20px;
+            padding: 10px;
         }
         
         .content {
@@ -139,7 +139,7 @@
         
         .profile img {
             max-width: 100%;
-            margin-right: 20px; /* Espaço à direita da imagem */
+            margin-right: 10px; /* Espaço à direita da imagem */
         }
 
 
@@ -180,6 +180,20 @@
             transform: scale(1.1);
         }
 
+        section .title {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;;
+            margin: 0px;
+            
+        }
+
+        section .about-img {
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+
         section ul li:hover {
             transform: scale(1.1);
         }
@@ -197,6 +211,25 @@
             letter-spacing: -0.47px;
         }
 
+        section .personal {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+        }
+
+        section .about {
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        section .about li {
+            margin: px;
+        }
+        
         #conecte {
             padding: 0 0 0 21px;
         }
