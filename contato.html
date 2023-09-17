@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,34 +17,42 @@
         </nav>
     
         <div class="header-container">
-            <img src="images\s-l400.jpg" alt="Grupo" />
+            <img src="s-l400.jpg" alt="Grupo" />
             <h1>Batcaverna</h1>
         </div>
     </header>
     <main>
     <form action="processar.php" method="POST">
         <fieldset>
-            <h1>Cadastro de Currículo</h1>
+            <h1>Contato</h1>
             <fieldset>
-                <legend>Informações Pessoais</legend>
+                <legend>Dados Pessoais</legend>
                 <label for="fname">Nome:</label>
-                <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>
+                <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>*
                 <br><br>
 
                 <label for="femail">E-mail:</label>
-                <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>
+                <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>*
                 <br><br>
 
-                <label for="aniversario">Data de Nascimento:</label>
-                <input type="date" name="aniversario" id="aniversario" />
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" placeholder="Digite sua Idade"/>*
+                <br><br>
+
+                <label for="ftelefone">Telefone:</label>
+                <input type="tel" name="ftelefone" id="ftelefone " placeholder="(11)98765-4321 "/>*
+                <br><br>
+
+                <label for="datanascimento">Data de Nascimento:</label>
+                <input type="date" name="datanascimento" id="datanascimento" />
                 <br /><br />
+                
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                <label for="masculino">Masculino</label>
 
-                <label for="altura">Altura(m):</label>
-                <input type="number" name="altura" id="altura" step="0.1" />
-                <br><br>
-
-                <label for="fsite">Site:</label>
-                <input type="text" name="fsite" placeholder="Facebook, Linkedin"/>
+                <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                <label for="feminino">Feminino</label>
                 <br><br>
 
                 <label for="estadoCivil">Estado Civil:</label>
@@ -56,56 +64,88 @@
                     <option>Separado</option>
                     <option>Outro</option>
                 </select>
-
                 <br><br>
 
-                <label>Sexo:</label>
-                <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                <label for="masculino">Masculino</label>
+            </fieldset>
 
-                <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                <label for="feminino">Feminino</label>
+            <fieldset>
+                <legend>Dados da Empresa</legend>
+                <label for="fcnpj">CNPJ:</label>
+                <input type="number" name="fcnpj" id="fcnpj" />
+                <br><br>
+
+                <label for="frazao">Razão Social:</label>
+                <input type="number" name="frazao" id="frazao" />
+                <br><br>
+                
+                <label for="framo">Ramo de Atuação:</label>
+                <input type="text" name="framo" id="framo" />
+                <br><br>
             </fieldset>
 
             <fieldset>
                 <legend>Endereço</legend>
                 <label for="fCEP">CEP:</label>
-                <input type="text" name="fCEP" id="fCEP" />
+                <input type="number" name="fCEP" id="fCEP" />*
+                <br><br>
+
+                <label for="fcidade">Cidade:</label>
+                <input type="text" name="fcidade" id="fcidade" />*
+
+                <label for="festado">Estado:</label>
+                <input type="text" name="festado" id="festado" />*
+                <br><br>
+
+                <label for="ftipologradouro">Tipo de Logradouro:</label>
+                <select name="ftipologradouro" id="ftipologradouro">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Rua</option>
+                    <option>Avenida</option>
+                    <option>Praça</option>
+                    <option>Viela</option>
+                    <option>Outro</option>
+                </select>*
                 <br><br>
 
                 <label for="fendereco">Endereço:</label>
                 <input type="text" name="fendereco" id="fendereco" />
                 <br><br>
-            </fieldset>
 
-            <fieldset>
-                <legend>Contato</legend>
-                <label for="ftelefone">Telefone:</label>
-                <input type="tel" name="ftelefone" id="ftelefone" />
-                <br><br>
-
-                <label for="fcelular">Celular:</label>
-                <input type="tel" name="fcelular" id="fcelular" />
+                <label for="fnlogradouro">Número:</label>
+                <input type="text" name="fnlogradouro" id="fnlogradouro" />
                 <br><br>
             </fieldset>
 
             <fieldset>
-                <legend>Conhecimentos</legend>
-                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="html" />
-                <label for="conhecimento1">HTML</label>
-
-                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="CSS" />
-                <label for="conhecimento2">CSS</label>
-
-                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="JavaScript" />
-                <label for="conhecimento3">JavaScript</label>
-
-                <br><br>
-                <label for="maisConhecimentos">Mais conhecimentos:</label>
-                <textarea name="maisConhecimentos" rows="8" cols="15">
-                    Digite os seus conhecimentos:
+                <legend>Descrição do Interesse</legend>
+                <br>
+                <label for="maisConhecimentos"></label>
+                <textarea name="maisConhecimentos" rows="8" cols="50">Digite o seu interese ao nos contactar:
                 </textarea>
                 <br><br>
+
+                <label>Qual area de interesse:</label>
+                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
+                <label for="conhecimento1">FrontEnd</label>
+
+                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
+                <label for="conhecimento2">BackEnd</label>
+
+                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
+                <label for="conhecimento3">FullStack</label>
+                <br><br>
+
+                <label>Trabalho específico:</label><br>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                <label for="masculino">desenvolvimento de Sites</label><br>
+
+                <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                <label for="feminino">Manutenção do sistema</label><br>
+
+                <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                <label for="feminino">Outro</label>
+                <br><br>
+
             </fieldset>
             <input type="submit" value="Enviar">
         </fieldset>
@@ -120,7 +160,6 @@
                 <ul>
                     <li><a href="index.html"> Página Inicial </a></li>
                     <li><a href="galeria.html"> Galeria </a></li>
-                    <li><a href="contato.html"> Contato </a></li>
                 </ul>
             </div>
 
@@ -135,7 +174,7 @@
             </div>
 
             <div id="logo">
-                    <img src="images/logo_fosasco_330-removebg-preview.png" alt="" style="width: 40%;">
+                    <img src="logo_fosasco_330-removebg-preview.png" alt="" style="width: 40%;">
                 </ul>
             </div>
         </div>
