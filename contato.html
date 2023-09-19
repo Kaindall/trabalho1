@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/contato.css">
 </head>
+
 <body>
     <header>
         <nav id="menu-h">
@@ -22,135 +29,171 @@
         </div>
     </header>
     <main>
-    <form action="processar.php" method="POST">
-        <fieldset>
-            <h1>Contato</h1>
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <label for="fname">Nome:</label>
-                <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>*
-                <br><br>
+        <section>
+            <form id="personalForm" method="POST">
+                <fieldset>
+                    <h1>Contate-nos</h1>
+                    <fieldset class="form-container">
+                        <h3>Dados Pessoais</h3>
+                        <label for="fname">Nome:</label>
+                        <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>*
+                        <br><br>
+        
+                        <label for="femail">E-mail:</label>
+                        <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>*
+                        <br><br>
+        
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" id="idade" placeholder="Digite sua Idade"/>*
+                        <br><br>
+        
+                        <label for="ftelefone">Telefone:</label>
+                        <input type="tel" name="ftelefone" id="ftelefone " placeholder="(11)98765-4321 "/>*
+                        <br><br>
+        
+                        <label for="datanascimento">Data de Nascimento:</label>
+                        <input type="date" name="datanascimento" id="datanascimento" />
+                        <br /><br />
+                        
+                        <label>Sexo:</label>
+                        <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                        <label for="masculino">Masculino</label>
+        
+                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                        <label for="feminino">Feminino</label>
+                        <br><br>
+        
+                        <label for="estadoCivil">Estado Civil:</label>
+                        <select name="estadoCivil" id="estadoCivil">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Solteiro</option>
+                            <option>Casado</option>
+                            <option>Viuvo</option>
+                            <option>Separado</option>
+                            <option>Outro</option>
+                        </select>
+                        <br><br>
+                    </fieldset>
+                    <hr>
 
-                <label for="femail">E-mail:</label>
-                <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>*
-                <br><br>
+                    <fieldset class="form-container">
+                        <h3>Endereço</h3>
+                        <label for="fCEP">CEP:</label>
+                        <input type="number" name="fCEP" id="fCEP" />*
+                        <br><br>
+        
+                        <label for="fcidade">Cidade:</label>
+                        <input type="text" name="fcidade" id="fcidade" />*
+        
+                        <label for="festado">Estado:</label>
+                        <input type="text" name="festado" id="festado" />*
+                        <br><br>
+        
+                        <label for="ftipologradouro">Tipo de Logradouro:</label>
+                        <select name="ftipologradouro" id="ftipologradouro">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Rua</option>
+                            <option>Avenida</option>
+                            <option>Praça</option>
+                            <option>Viela</option>
+                            <option>Outro</option>
+                        </select>*
+                        <br><br>
+        
+                        <label for="fendereco">Endereço:</label>
+                        <input type="text" name="fendereco" id="fendereco" />
+                        <br><br>
+        
+                        <label for="fnlogradouro">Número:</label>
+                        <input type="text" name="fnlogradouro" id="fnlogradouro" />
+                        <br><br>
+                    </fieldset>
+                    <hr>
 
-                <label for="idade">Idade</label>
-                <input type="number" name="idade" id="idade" placeholder="Digite sua Idade"/>*
-                <br><br>
+                    <fieldset class="form-container">
+                        <h3>Descrição do Interesse</h3>
+                        <br>
+                        <label for="maisConhecimentos"></label>
+                        <textarea name="maisConhecimentos" rows="8" cols="50">Digite o seu interese ao nos contactar:
+                        </textarea>
+                        <br><br>
+        
+                        <label>Qual area de interesse:</label>
+                        <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
+                        <label for="conhecimento1">FrontEnd</label>
+        
+                        <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
+                        <label for="conhecimento2">BackEnd</label>
+        
+                        <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
+                        <label for="conhecimento3">FullStack</label>
+                        <br><br>
+        
+                        <label>Trabalho específico:</label><br>
+                        <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                        <label for="masculino">desenvolvimento de Sites</label><br>
+        
+                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                        <label for="feminino">Manutenção do sistema</label><br>
+        
+                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                        <label for="feminino">Outro</label>
+                        <br><br>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                    <hr>
+                </form>
+                <form id="businessForm">
+                    <fieldset class="form-container">
+                        <h3>Dados da Empresa</h3>
+                        <label for="fcnpj">CNPJ:</label>
+                        <input type="number" name="fcnpj" id="fcnpj" />
+                        <br><br>
+        
+                        <label for="frazao">Razão Social:</label>
+                        <input type="number" name="frazao" id="frazao" />
+                        <br><br>
+                        
+                        <label for="framo">Ramo de Atuação:</label>
+                        <input type="text" name="framo" id="framo" />
+                        <br><br>
+                    </fieldset>
+                    <hr>
 
-                <label for="ftelefone">Telefone:</label>
-                <input type="tel" name="ftelefone" id="ftelefone " placeholder="(11)98765-4321 "/>*
-                <br><br>
-
-                <label for="datanascimento">Data de Nascimento:</label>
-                <input type="date" name="datanascimento" id="datanascimento" />
-                <br /><br />
-                
-                <label>Sexo:</label>
-                <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                <label for="masculino">Masculino</label>
-
-                <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                <label for="feminino">Feminino</label>
-                <br><br>
-
-                <label for="estadoCivil">Estado Civil:</label>
-                <select name="estadoCivil" id="estadoCivil">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Solteiro</option>
-                    <option>Casado</option>
-                    <option>Viuvo</option>
-                    <option>Separado</option>
-                    <option>Outro</option>
-                </select>
-                <br><br>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Dados da Empresa</legend>
-                <label for="fcnpj">CNPJ:</label>
-                <input type="number" name="fcnpj" id="fcnpj" />
-                <br><br>
-
-                <label for="frazao">Razão Social:</label>
-                <input type="number" name="frazao" id="frazao" />
-                <br><br>
-                
-                <label for="framo">Ramo de Atuação:</label>
-                <input type="text" name="framo" id="framo" />
-                <br><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Endereço</legend>
-                <label for="fCEP">CEP:</label>
-                <input type="number" name="fCEP" id="fCEP" />*
-                <br><br>
-
-                <label for="fcidade">Cidade:</label>
-                <input type="text" name="fcidade" id="fcidade" />*
-
-                <label for="festado">Estado:</label>
-                <input type="text" name="festado" id="festado" />*
-                <br><br>
-
-                <label for="ftipologradouro">Tipo de Logradouro:</label>
-                <select name="ftipologradouro" id="ftipologradouro">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Rua</option>
-                    <option>Avenida</option>
-                    <option>Praça</option>
-                    <option>Viela</option>
-                    <option>Outro</option>
-                </select>*
-                <br><br>
-
-                <label for="fendereco">Endereço:</label>
-                <input type="text" name="fendereco" id="fendereco" />
-                <br><br>
-
-                <label for="fnlogradouro">Número:</label>
-                <input type="text" name="fnlogradouro" id="fnlogradouro" />
-                <br><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Descrição do Interesse</legend>
-                <br>
-                <label for="maisConhecimentos"></label>
-                <textarea name="maisConhecimentos" rows="8" cols="50">Digite o seu interese ao nos contactar:
-                </textarea>
-                <br><br>
-
-                <label>Qual area de interesse:</label>
-                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
-                <label for="conhecimento1">FrontEnd</label>
-
-                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
-                <label for="conhecimento2">BackEnd</label>
-
-                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
-                <label for="conhecimento3">FullStack</label>
-                <br><br>
-
-                <label>Trabalho específico:</label><br>
-                <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                <label for="masculino">desenvolvimento de Sites</label><br>
-
-                <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                <label for="feminino">Manutenção do sistema</label><br>
-
-                <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                <label for="feminino">Outro</label>
-                <br><br>
-
-            </fieldset>
-            <input type="submit" value="Enviar">
-        </fieldset>
-    </form>
-</main>
+                    <fieldset class="form-container">
+                        <h3>Descrição do Interesse</legend>
+                        <br>
+                        <label for="maisConhecimentos"></label>
+                        <textarea name="maisConhecimentos" rows="8" cols="50">Digite o seu interese ao nos contactar:
+                        </textarea>
+                        <br><br>
+        
+                        <label>Qual area de interesse:</label>
+                        <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
+                        <label for="conhecimento1">FrontEnd</label>
+        
+                        <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
+                        <label for="conhecimento2">BackEnd</label>
+        
+                        <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
+                        <label for="conhecimento3">FullStack</label>
+                        <br><br>
+        
+                        <label>Trabalho específico:</label><br>
+                        <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                        <label for="masculino">desenvolvimento de Sites</label><br>
+        
+                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                        <label for="feminino">Manutenção do sistema</label><br>
+        
+                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                        <label for="feminino">Outro</label>
+                        <br><br>
+                    </fieldset>
+                        <input type="submit" value="Enviar">
+                </form>
+        </section>
+    </main>
 <footer>
     <div class="container-footer">
         <div class="row-footer">

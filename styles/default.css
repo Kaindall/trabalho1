@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#menu-h {
+    background-color: rgb(10, 10, 10);
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li{
+    display: inline;
+}
+
+#menu-h  ul li a{
+    color: seashell;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+#menu-h  ul li a:hover{
+    background-color: rgb(56, 6, 194);
+}
+
+h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+    font-size: 40px;
+    margin-top: 16px;
+}
+
+body {
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+img {
+    border-radius: 15px;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(10, 10, 10);
+    padding: 50px 0;
+    text-align: center; /* Centralize o conteúdo dentro do footer */
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralize as colunas horizontalmente */
+}
+
+.footer-col {
+    flex: 0 0 33.33%;
+    padding: 0 15px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center; /* Centralize o texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralize o texto verticalmente */
+}
+
+
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
