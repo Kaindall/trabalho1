@@ -110,6 +110,10 @@ footer {
     justify-content: center; /* Centralize o texto verticalmente */
 }
 
+li q {
+    color: aliceblue;
+}
+
 
 .footer-col h4{
     font-size: 22px;
@@ -139,7 +143,6 @@ footer {
     padding-left: 10px;
 }
 
-/* Responsivo */
 @media (max-width: 800px) {
     .footer-col{
         width: 50%;

@@ -7,8 +7,10 @@
 }
 
 .header-container img {
-    max-width: 100%;
-    height: auto;
+    width: 200px; 
+    height: 170px; 
+    border-radius: 70%; 
+   
 }
 
 
@@ -29,11 +31,11 @@
     margin-right: 0px; /* Espaço à direita da imagem */
 }
 
-.social-list {
+/* .social-list {
     justify-content: center;
     transition: transform .3s;
     transform: scale(1.1);
-}
+} */
 
 section .title-container {
     display: flex;
@@ -67,6 +69,7 @@ section .personal {
     display: flex;
     flex-direction: column;
     padding: 0px;
+    margin-right: 20px;
 }
 
 section .about {
@@ -106,6 +109,11 @@ section ul {
     
 }
 
+input {
+    display: block;
+  }
+
+  
 /* animation*/
 /*Definir a animação, qualquer nome, falar onde começa e onde termina;
 Pelo menos duas propriedades; nome e tempo; Pode ter delay, importante que coloque as propriedades antes para ficar legal*/
