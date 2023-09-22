@@ -26,167 +26,212 @@
     <main>
         <section>
             <form id="personalForm" method="POST">
+                <h1 id="general-title">Contate-nos</h1>
                 <fieldset>
-                    <h1>Contate-nos</h1>
-                    <fieldset class="form-container">
-                        <h3>Dados Pessoais</h3>
-                        <label for="fname">Nome:</label>
-                        <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>*
-                        <br><br>
+                    <hr>
+                    <fieldset id="personalForm-about" class="form-container">
+                        <h3 class="form-title">Dados Pessoais</h3>
+                        <div id="fname" class="form-item">
+                            <label for="fname">Nome*:</label>
+                            <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>
+                        </div>
         
-                        <label for="femail">E-mail:</label>
-                        <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>*
-                        <br><br>
+                        <div id="femail" class="form-item">
+                            <label for="femail">E-mail*:</label>
+                            <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>
+                        </div>
         
-                        <label for="idade">Idade</label>
-                        <input type="number" name="idade" id="idade" placeholder="Digite sua Idade"/>*
-                        <br><br>
+                        <div id="idade" class="form-item">
+                            <label for="idade">Idade*:</label>
+                            <input type="number" name="idade" id="idade" placeholder="Digite sua Idade"/>
+                        </div>
         
-                        <label for="ftelefone">Telefone:</label>
-                        <input type="tel" name="ftelefone" id="ftelefone " placeholder="(11)98765-4321 "/>*
-                        <br><br>
+                        <div id="ftelefone" class="form-item">
+                            <label for="ftelefone">Telefone*:</label>
+                            <input type="tel" name="ftelefone" id="ftelefone " placeholder="(11)98765-4321 "/>
+                        </div>
         
-                        <label for="datanascimento">Data de Nascimento:</label>
-                        <input type="date" name="datanascimento" id="datanascimento" />
-                        <br /><br />
+                        <div id="birthdate" class="form-item">
+                            <label for="datanascimento">Data de Nascimento:</label>
+                            <input type="date" name="datanascimento" id="datanascimento" />
+                        </div>
                         
-                        <label>Sexo:</label>
-                        <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                        <label for="masculino">Masculino</label>
+                        <div class="gender-container">
+                            <label style="align-self: center;">Sexo:</label>
+                            <div style="margin-left: 5%;">    
+                                <div>
+                                    <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                                    <label for="masculino">Masculino</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                                    <label for="feminino">Feminino</label>
+                                </div>
+                            </div>
+                        </div>
         
-                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                        <label for="feminino">Feminino</label>
-                        <br><br>
-        
-                        <label for="estadoCivil">Estado Civil:</label>
-                        <select name="estadoCivil" id="estadoCivil">
-                            <option selected disabled value="">Selecione</option>
-                            <option>Solteiro</option>
-                            <option>Casado</option>
-                            <option>Viuvo</option>
-                            <option>Separado</option>
-                            <option>Outro</option>
-                        </select>
-                        <br><br>
+                        <div id="relation-status" class="form-item">
+                            <label for="estadoCivil">Estado Civil:</label>
+                            <select id="relation-select" style="margin-left: 3%;" name="estadoCivil" id="estadoCivil">
+                                <option selected disabled value="">Selecione</option>
+                                <option>Solteiro</option>
+                                <option>Casado</option>
+                                <option>Viuvo</option>
+                                <option>Separado</option>
+                                <option>Outro</option>
+                            </select>
+                            <br><br>
+                        </div>
                     </fieldset>
                     <hr>
 
-                    <fieldset class="form-container">
-                        <h3>Endereço</h3>
-                        <label for="fCEP">CEP:</label>
-                        <input type="number" name="fCEP" id="fCEP" />*
-                        <br><br>
+                    <fieldset id="personalForm-adress" class="form-container">
+                        <h3 class="form-title">Endereço</h3>
+                        <div id="fCEP" class="form-item">
+                            <label for="fCEP">CEP*:</label>
+                            <input type="number" name="fCEP" id="fCEP" />
+                        </div>
         
-                        <label for="fcidade">Cidade:</label>
-                        <input type="text" name="fcidade" id="fcidade" />*
+                        <div id="fcidade" class="form-item">
+                            <label for="fcidade">Cidade*:</label>
+                            <input type="text" name="fcidade" id="fcidade" />
+                        </div>
         
-                        <label for="festado">Estado:</label>
-                        <input type="text" name="festado" id="festado" />*
-                        <br><br>
+                        <div id="festado" class="form-item">
+                            <label for="festado">Estado*:</label>
+                            <input type="text" name="festado" id="festado" />
+                        </div>
         
-                        <label for="ftipologradouro">Tipo de Logradouro:</label>
-                        <select name="ftipologradouro" id="ftipologradouro">
-                            <option selected disabled value="">Selecione</option>
-                            <option>Rua</option>
-                            <option>Avenida</option>
-                            <option>Praça</option>
-                            <option>Viela</option>
-                            <option>Outro</option>
-                        </select>*
-                        <br><br>
-        
-                        <label for="fendereco">Endereço:</label>
-                        <input type="text" name="fendereco" id="fendereco" />
-                        <br><br>
-        
-                        <label for="fnlogradouro">Número:</label>
-                        <input type="text" name="fnlogradouro" id="fnlogradouro" />
-                        <br><br>
+                        <div id="fstreet-type" class="form-item">
+                            <label for="ftipologradouro">Tipo de Logradouro*:</label>
+                            <select name="ftipologradouro" id="ftipologradouro">
+                                <option selected disabled value="">Selecione</option>
+                                <option>Rua</option>
+                                <option>Avenida</option>
+                                <option>Praça</option>
+                                <option>Viela</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div id="street-name" class="form-item">
+                            <label for="fendereco">Endereço:</label>
+                            <input style="width: 80%;" type="text" name="fendereco" id="fendereco" />
+                        </div>
                     </fieldset>
                     <hr>
 
-                    <fieldset class="form-container">
-                        <h3>Descrição do Interesse</h3>
-                        <br>
+                    <fieldset id="interest" class="form-container">
+                        <h3 class="form-title">Descrição do Interesse</h3>
                         <label for="maisConhecimentos"></label>
-                        <textarea name="maisConhecimentos" rows="8" cols="50">Digite o seu interese ao  contactar:
+                        <textarea name="maisConhecimentos" rows="8" cols="50">  Qual é o motivo do contato?
                         </textarea>
-                        <br><br>
+
+                        <h4 class="interest-title">Área de Interesse</h4>
+                        <div class="interest-container">
+                            <div>
+                                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
+                                <label for="conhecimento1">FrontEnd</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
+                                <label for="conhecimento2">BackEnd</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
+                                <label for="conhecimento3">FullStack</label>
+                            </div>
+                        </div>
         
-                        <label>Qual area de interesse:</label>
-                        <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
-                        <label for="conhecimento1">FrontEnd</label>
-        
-                        <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
-                        <label for="conhecimento2">BackEnd</label>
-        
-                        <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
-                        <label for="conhecimento3">FullStack</label>
-                        <br><br>
-        
-                        <label>Trabalho específico:</label><br>
-                        <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                        <label for="masculino">desenvolvimento de Sites</label><br>
-        
-                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                        <label for="feminino">Manutenção do sistema</label><br>
-        
-                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                        <label for="feminino">Outro</label>
-                        <br><br>
+                        <h4 class="interest-title">Trabalho específico:<h4>
+                        <div id="interest-work" class="interest-container">
+                            <div>
+                                <input type="radio" name="work" id="work-dev" value="Work-Dev" />
+                                <label for="work-dev">Desenvolvimento de Sites</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="work" id="work-system" value="Work-System" />
+                                <label for="work-system">Manutenção do sistema</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="work" id="work-other" value="Others" />
+                                <label for="work-other">Outros</label>
+                            </div>
+                        </div>
                     </fieldset>
-                    <input type="submit" value="Enviar">
-                    <hr>
-                </form>
-                <form id="businessForm">
+                    <hr style="margin-top: 10px;">
+                </fieldset>
+                <button class="btn-submit" type="submit" value="Enviar">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <form id="businessForm">
+                <fieldset>
                     <fieldset class="form-container">
-                        <h3>Dados da Empresa</h3>
-                        <label for="fcnpj">CNPJ:</label>
-                        <input type="number" name="fcnpj" id="fcnpj" />
-                        <br><br>
+                        <h3 class="form-title">Dados da Empresa</h3>
+                        <div id="cnpj" class="form-item">
+                            <label for="fcnpj">CNPJ:</label>
+                            <input type="text" name="fcnpj" id="fcnpj" />
+                        </div>
         
-                        <label for="frazao">Razão Social:</label>
-                        <input type="number" name="frazao" id="frazao" />
-                        <br><br>
+                        <div id="business-name" class="form-item">
+                            <label for="frazao">Razão Social:</label>
+                            <input type="text" name="frazao" id="frazao" />
+                        </div>
                         
-                        <label for="framo">Ramo de Atuação:</label>
-                        <input type="text" name="framo" id="framo" />
-                        <br><br>
+                        <div id="business-area" class="form-item">
+                            <label for="framo">Ramo de Atuação:</label>
+                            <input type="text" name="framo" id="framo" />
+                        </div>
                     </fieldset>
                     <hr>
 
-                    <fieldset class="form-container">
-                        <h3>Descrição do Interesse</legend>
-                        <br>
+                    <fieldset id="interest" class="form-container">
+                        <h3 class="form-title">Descrição do Interesse</h3>
                         <label for="maisConhecimentos"></label>
-                        <textarea name="maisConhecimentos" rows="8" cols="50">Digite o seu interese ao nos contactar:
+                        <textarea name="maisConhecimentos" rows="8" cols="50">  Qual é o motivo do contato?
                         </textarea>
-                        <br><br>
+
+                        <h4 class="interest-title">Área de Interesse</h4>
+                        <div class="interest-container">
+                            <div>
+                                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
+                                <label for="conhecimento1">FrontEnd</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
+                                <label for="conhecimento2">BackEnd</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
+                                <label for="conhecimento3">FullStack</label>
+                            </div>
+                        </div>
         
-                        <label>Qual area de interesse:</label>
-                        <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
-                        <label for="conhecimento1">FrontEnd</label>
-        
-                        <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
-                        <label for="conhecimento2">BackEnd</label>
-        
-                        <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
-                        <label for="conhecimento3">FullStack</label>
-                        <br><br>
-        
-                        <label>Trabalho específico:</label><br>
-                        <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                        <label for="masculino">desenvolvimento de Sites</label><br>
-        
-                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                        <label for="feminino">Manutenção do sistema</label><br>
-        
-                        <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                        <label for="feminino">Outro</label>
-                        <br><br>
+                        <h4 class="interest-title">Trabalho específico:<h4>
+                        <div id="interest-work" class="interest-container">
+                            <div>
+                                <input type="radio" name="work" id="work-dev" value="Work-Dev" />
+                                <label for="work-dev">Desenvolvimento de Sites</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="work" id="work-system" value="Work-System" />
+                                <label for="work-system">Manutenção do sistema</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="work" id="work-other" value="Others" />
+                                <label for="work-other">Outros</label>
+                            </div>
+                        </div>
                     </fieldset>
-                        <input type="submit" value="Enviar">
-                </form>
+                    <hr style="margin-top: 10px;">
+ 
+                <button class="btn-submit" type="submit" value="Enviar">Enviar</button>
+                </fieldset>
+            </form>
         </section>
     </main>
 <footer>
@@ -212,7 +257,7 @@
             </div>
 
             <div id="logo">
-                    <img src="logo_fosasco_330-removebg-preview.png" alt="" style="width: 40%;">
+                    <img src="images/logo_fosasco_330-removebg-preview.png" alt="" style="width: 40%;">
                 </ul>
             </div>
         </div>

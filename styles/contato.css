@@ -9,3 +9,80 @@ section form {
 section form fieldset {
     border: 0px;
 }
+
+#general-title {
+    margin-top: 0px;
+    margin-left: 25%;
+}
+
+.form-title {
+    align-self: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    padding: 0px;
+    margin-bottom: 3%;
+}
+
+.gender-container {
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 3%;
+}
+
+.gender-container * {
+    padding: 0px;
+}
+
+.gender-container label {
+    align-self: center;
+}
+
+#relation-status {
+    height: 30px;
+}
+
+.interest-title {
+    align-self: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.interest-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+#interest textarea {
+    border-radius: 8px;
+    padding: 1%;
+}
+
+.interest-container div {
+    padding: 0px;
+}
+
+#interest-work {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding-left: 30%;
+}
+
+.btn-submit {
+    margin-left: 45%;
+    margin-top: 3%;
+    padding: 4px;
+    width: 15%;
+    border-radius: 8px;
+    border-width: 1px;
+}
