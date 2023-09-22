@@ -1,0 +1,44 @@
+h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+h4 {
+    color: aliceblue;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+.nome-perfil1 {
+    margin-left: 143px;
+}
+
+.nome-perfil2  {
+    margin-left: 15px;
+}
+
+.nome-perfil3{
+    margin-left: 15px;
+}
+
+table{
+    margin-left: 260px;
+}
+.perfil1 {
+    margin-left: 150px; 
+    width: 160px;
+}
+
+.perfil2 {
+    margin-left: 20px;
+    width: 160px;
+    
+}
+
+.perfil3 {
+    margin-left: 20px;
+    width: 160px;
+}
