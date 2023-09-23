@@ -44,8 +44,9 @@ section .about-img {
     max-width: 200px;
 }
 
-section ul li:hover {
+summary:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 section {
