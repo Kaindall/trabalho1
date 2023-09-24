@@ -1,6 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 h3 {
     color: aliceblue;
     text-align: center;
+    margin-top: 50px; 
 }
 
 h4 {
@@ -13,33 +22,6 @@ img {
     width: 300px;
 }
 
-.nome-perfil1 {
-    margin-left: 143px;
-}
-
-.nome-perfil2  {
-    margin-left: 15px;
-}
-
-.nome-perfil3{
-    margin-left: 15px;
-}
-
-table{
-    margin-left: 260px;
-}
-.perfil1 {
-    margin-left: 150px; 
-    width: 160px;
-}
-
-.perfil2 {
-    margin-left: 20px;
-    width: 160px;
-    
-}
-
-.perfil3 {
-    margin-left: 20px;
-    width: 160px;
+img:hover {
+    transform: scale(1.1);
 }

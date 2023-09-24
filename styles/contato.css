@@ -75,7 +75,6 @@ section form fieldset {
     display: flex;
     flex-direction: column;
     font-weight: 400;
-    padding-left: 30%;
 }
 
 .btn-submit {
