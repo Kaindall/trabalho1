@@ -17,11 +17,11 @@ h4 {
     text-align: center;
 }
 
-img {
+.Grupo img {
     margin-top: 50px; 
     width: 300px;
 }
 
-img:hover {
+.Grupo img:hover {
     transform: scale(1.1);
 }
