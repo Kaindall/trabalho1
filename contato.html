@@ -32,47 +32,47 @@
                     <fieldset id="personalForm-about" class="form-container">
                         <h3 class="form-title">Dados Pessoais</h3>
                         <div id="name" class="form-item">
-                            <label for="fname">Nome*:</label>
-                            <input type="text" name="name"  placeholder="Digite seu nome"/>
+                            <label id="fname">Nome*:</label>
+                            <input type="text" placeholder="Digite seu nome">
                         </div>
         
                         <div id="email" class="form-item">
-                            <label for="femail">E-mail*:</label>
-                            <input type="email" name="email" placeholder="Digite seu E-mail"/>
+                            <label id="femail">E-mail*:</label>
+                            <input type="email" placeholder="Digite seu E-mail">
                         </div>
         
                         <div id="idade" class="form-item">
-                            <label for="fidade">Idade*:</label>
-                            <input type="number" name="idade" placeholder="Digite sua Idade"/>
+                            <label id="fidade">Idade*:</label>
+                            <input type="number" placeholder="Digite sua Idade">
                         </div>
         
-                        <div id="ftelefone" class="form-item">
-                            <label for="ftelefone">Telefone*:</label>
-                            <input type="tel" name="telefone"  placeholder="(11)98765-4321 "/>
+                        <div id="telefone" class="form-item">
+                            <label id="ftelefone">Telefone*:</label>
+                            <input type="tel" placeholder="(11)98765-4321 ">
                         </div>
         
                         <div id="birthdate" class="form-item">
-                            <label for="datanascimento">Data de Nascimento:</label>
-                            <input type="date" name="datanascimento" />
+                            <label id="datanascimento">Data de Nascimento:</label>
+                            <input type="date">
                         </div>
                         
                         <div class="gender-container">
                             <label style="align-self: center;">Sexo:</label>
                             <div style="margin-left: 5%;">    
                                 <div>
-                                    <input type="radio" name="sexo" id="masculino" value="Masculino" />
-                                    <label for="masculino">Masculino</label>
+                                    <input type="radio" id="masculino" value="Masculino">
+                                    <label id="fmasculino">Masculino</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="sexo" id="feminino" value="Feminino" />
-                                    <label for="feminino">Feminino</label>
+                                    <input type="radio" id="feminino" value="Feminino">
+                                    <label id="ffeminino">Feminino</label>
                                 </div>
                             </div>
                         </div>
         
                         <div id="relation-status" class="form-item">
-                            <label for="festadoCivil">Estado Civil:</label>
-                            <select id="relation-select" style="margin-left: 3%;" name="estadoCivil" id="estadoCivil">
+                            <label id="festadoCivil">Estado Civil:</label>
+                            <select id="relation-select" style="margin-left: 3%;" name="estadoCivil">
                                 <option selected disabled value="">Selecione</option>
                                 <option>Solteiro</option>
                                 <option>Casado</option>
@@ -88,23 +88,23 @@
                     <fieldset id="personalForm-adress" class="form-container">
                         <h3 class="form-title">Endereço</h3>
                         <div id="CEP" class="form-item">
-                            <label for="fCEP">CEP*:</label>
-                            <input type="number" name="CEP" id="fCEP" />
+                            <label id="fCEP">CEP*:</label>
+                            <input type="number">
                         </div>
         
-                        <div id="cidade" class="form-item">
-                            <label for="fcidade">Cidade*:</label>
-                            <input type="text" name="cidade" id="fcidade" />
+                        <div id="city" class="form-item">
+                            <label id="cidade">Cidade*:</label>
+                            <input type="text" id="fcidade">
                         </div>
         
-                        <div id="estado" class="form-item">
-                            <label for="festado">Estado*:</label>
-                            <input type="text" name="estado" id="festado" />
+                        <div id="state" class="form-item">
+                            <label id="festado">Estado*:</label>
+                            <input type="text" id="estado">
                         </div>
         
                         <div id="fstreet-type" class="form-item">
-                            <label for="ftipologradouro">Tipo de Logradouro*:</label>
-                            <select name="tipologradouro" id="ftipologradouro">
+                            <label id="ftipologradouro">Tipo de Logradouro*:</label>
+                            <select id="tipologradouro">
                                 <option selected disabled value="">Selecione</option>
                                 <option>Rua</option>
                                 <option>Avenida</option>
@@ -114,52 +114,53 @@
                             </select>
                         </div>
                         <div id="street-name" class="form-item">
-                            <label for="endereco">Endereço:</label>
-                            <input style="width: 80%;" type="text" name="fendereco" id="fendereco" />
+                            <label id="endereco">Endereço:</label>
+                            <input style="width: 80%;" type="text" id="fendereco">
                         </div>
                     </fieldset>
                     <hr>
 
                     <fieldset id="interest" class="form-container">
                         <h3 class="form-title">Descrição do Interesse</h3>
-                        <label for="maisConhecimentos"></label>
+                        <label id="maisConhecimentos"></label>
                         <textarea name="maisConhecimentos" rows="8" cols="50" placeholder="Qual é o motivo do contato?">  
                         </textarea>
 
-                        <h4 class="interest-title">Área de Interesse</h4>
+                        <h4>Área de Interesse</h4>
                         <div class="interest-container">
                             <div>
-                                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd" />
-                                <label for="fconhecimento1">FrontEnd</label>
+                                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="FrontEnd">
+                                <label id="fconhecimento1">FrontEnd</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd" />
-                                <label for="fconhecimento2">BackEnd</label>
+                                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="BackEnd">
+                                <label id="fconhecimento2">BackEnd</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack" />
-                                <label for="fconhecimento3">FullStack</label>
+                                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="FullStack">
+                                <label id="fconhecimento3">FullStack</label>
                             </div>
                         </div>
         
                 
-                        <div class="interest-container">
-                            <h4 class="interest-title">Trabalho específico:<h4></h4>
+                        <div id="interest-work" class="interest-container">
+                            <h4>Trabalho específico:</h4>
                             <div>
-                                <input type="radio" name="work" id="work-dev" value="Work-Dev" />
-                                <label for="fwork-dev">Desenvolvimento de Sites</label>
+                                <input type="radio" name="work" id="work-dev" value="Work-Dev">
+                                <label id="fwork-dev">Desenvolvimento de Sites</label>
                             </div>
 
                             <div>
-                                <input type="radio" name="work" id="work-system" value="Work-System" />
-                                <label for="fwork-system">Manutenção do sistema</label>
+                                <input type="radio" name="work" id="work-system" value="Work-System">
+                                <label id="fwork-system">Manutenção do sistema</label>
                             </div>
                             
                             <div>
-                                <input type="radio" name="work" id="work-other" value="Others" />
-                                <label for="fwork-other">Outros</label>
+                                <input type="radio" name="work" id="work-other" value="Others">
+                                <label id="fwork-other">Outros</label>
                             </div>
                         </div>
+
                     </fieldset>
                     <hr style="margin-top: 10px;">
                     <button class="btn-submit" type="submit" value="Enviar">Enviar</button>
@@ -174,64 +175,63 @@
                 <fieldset>
                     <fieldset class="form-container">
                         <h3 class="form-title">Dados da Empresa</h3>
-                        <div id="cnpj" class="form-item">
-                            <label for="fcnpj">CNPJ:</label>
-                            <input type="text" name="cnpj" id="fcnpj" />
+                        <div id="cnpj-cod" class="form-item">
+                            <label id="fcnpj">CNPJ:</label>
+                            <input type="text" name="cnpj" id="cnpj">
                         </div>
         
                         <div id="business-name" class="form-item">
-                            <label for="frazao">Razão Social:</label>
-                            <input type="text" name="razao" id="razao" />
+                            <label id="frazao">Razão Social:</label>
+                            <input type="text" name="razao" id="razao">
                         </div>
                         
                         <div id="business-area" class="form-item">
-                            <label for="framo">Ramo de Atuação:</label>
-                            <input type="text" name="ramo" id="ramo" />
+                            <label id="framo">Ramo de Atuação:</label>
+                            <input type="text" name="ramo" id="ramo">
                         </div>
                     </fieldset>
                     <hr>
 
                     <fieldset id="interest-empresa" class="form-container">
                         <h3 class="form-title">Descrição do Interesse</h3>
-                        <label for="maisConhecimentos"></label>
-                        <textarea name="maisConhecimentos" rows="8" cols="50" placeholder="Qual é o motivo do contato?">
+                        <label id="maisConhecimentos-emp"></label>
+                        <textarea name="maisConhecimentos-emp" rows="8" cols="50" placeholder="Qual é o motivo do contato?">
                         </textarea>
 
                         <h4 class="interest-title">Área de Interesse</h4>
                         <div class="interest-container">
                             <div>
-                                <input type="checkbox" name="conhecimento1-emp" id="conhecimento1-emp" value="FrontEnd" />
-                                <label for="fconhecimento1-emp">FrontEnd</label>
+                                <input type="checkbox" name="conhecimento1-emp" id="conhecimento1-emp" value="FrontEnd">
+                                <label id="fconhecimento1-emp">FrontEnd</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="conhecimento2-emp" id="conhecimento2-emp" value="BackEnd" />
-                                <label for="conhecimento2-emp">BackEnd</label>
+                                <input type="checkbox" name="conhecimento2-emp" id="conhecimento2-emp" value="BackEnd">
+                                <label id="fconhecimento2-emp">BackEnd</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="conhecimento3-emp" id="conhecimento3-emp" value="FullStack" />
-                                <label for="fconhecimento3-emp">FullStack</label>
+                                <input type="checkbox" name="conhecimento3-emp" id="conhecimento3-emp" value="FullStack">
+                                <label id="fconhecimento3-emp">FullStack</label>
                             </div>
                         </div>
         
-                        
-                        <div id="interest-work" class="interest-container">
-                            <h4 class="interest-title">Trabalho específico:<h4></h4>
+                        <h4>Trabalho específico:</h4>
+                        <div id="interest-work-emp" class="interest-container">
                             <div>
-                                <input type="radio" name="work" id="work-dev-emp" value="Work-Dev-emp" />
-                                <label for="work-dev-emp">Desenvolvimento de Sites</label>
+                                <input type="radio" name="work" id="work-dev-emp" value="Work-Dev-emp">
+                                <label id="fwork-dev-emp">Desenvolvimento de Sites</label>
                             </div>
 
                             <div>
-                                <input type="radio" name="work" id="work-system-emp" value="Work-System-emp" />
-                                <label for="fwork-system-emp">Manutenção do sistema</label>
+                                <input type="radio" name="work" id="work-system-emp" value="Work-System-emp">
+                                <label id="fwork-system-emp">Manutenção do sistema</label>
                             </div>
                             
                             <div>
-                                <input type="radio" name="work" id="work-other-emp" value="Others" />
-                                <label for="fwork-other-emp">Outros</label>
+                                <input type="radio" name="work" id="work-other-emp" value="Others">
+                                <label id="fwork-other-emp">Outros</label>
                             </div>
                         </div>
-                        
+
                         <hr style="margin-top: 10px;">
  
                         <button class="btn-submit" type="submit" value="Enviar">Enviar</button>
@@ -267,7 +267,6 @@
                 <div id="logo">
                         <ul> 
                         <li class="quote"><q>Grandeza em pequenos começos - DRAKE, Francis</q></li> 
-                        <br><br>
                         <li><img src="images/logo_fosasco_330-removebg-preview.png" alt="" style="width: 40%;"> </li>   
                         </ul> 
                 </div>

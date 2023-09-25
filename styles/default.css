@@ -149,15 +149,7 @@ li q {
     padding-left: 10px;
 }
 
-@media (max-width: 800px) {
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
+.quote {
+    max-width: 280px;
+    padding: 20px 0;
 }
-@media (max-width:600px) {
-    .footer-col{
-        width: 100%;
-    }
-}
-zx

@@ -50,7 +50,7 @@ section form fieldset {
     height: 30px;
 }
 
-.interest-title {
+h4 {
     align-self: center;
     margin-top: 4%;
     margin-bottom: 3%;
@@ -72,6 +72,12 @@ section form fieldset {
 }
 
 #interest-work {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+#interest-work-emp {
     display: flex;
     flex-direction: column;
     font-weight: 400;
