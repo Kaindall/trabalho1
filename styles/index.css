@@ -104,7 +104,10 @@ section ul {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
-    
+}
+
+#numbered-list {
+    padding-left: 20px;
 }
 
 input {

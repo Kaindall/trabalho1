@@ -32,23 +32,23 @@
                     <fieldset id="personalForm-about" class="form-container">
                         <h3 class="form-title">Dados Pessoais</h3>
                         <div id="name" class="form-item">
-                            <label id="fname">Nome*:</label>
-                            <input type="text" placeholder="Digite seu nome">
+                            <label for="fname">Nome*:</label>
+                            <input id="fname" type="text" placeholder="Digite seu nome" required>
                         </div>
         
                         <div id="email" class="form-item">
-                            <label id="femail">E-mail*:</label>
-                            <input type="email" placeholder="Digite seu E-mail">
+                            <label for="femail">E-mail*:</label>
+                            <input id="femail" type="email" placeholder="Digite seu E-mail" required>
                         </div>
         
                         <div id="idade" class="form-item">
-                            <label id="fidade">Idade*:</label>
-                            <input type="number" placeholder="Digite sua Idade">
+                            <label for="fidade">Idade*:</label>
+                            <input id="fidade" type="number" placeholder="Digite sua Idade" required>
                         </div>
         
                         <div id="telefone" class="form-item">
-                            <label id="ftelefone">Telefone*:</label>
-                            <input type="tel" placeholder="(11)98765-4321 ">
+                            <label for="ftelefone">Telefone*:</label>
+                            <input id="ftelefone" type="tel" placeholder="(11)98765-4321" required>
                         </div>
         
                         <div id="birthdate" class="form-item">
@@ -88,23 +88,23 @@
                     <fieldset id="personalForm-adress" class="form-container">
                         <h3 class="form-title">Endereço</h3>
                         <div id="CEP" class="form-item">
-                            <label id="fCEP">CEP*:</label>
-                            <input type="number">
+                            <label for="fCEP">CEP*:</label>
+                            <input id="fCEP" type="number" required>
                         </div>
         
                         <div id="city" class="form-item">
-                            <label id="cidade">Cidade*:</label>
-                            <input type="text" id="fcidade">
+                            <label for="cidade">Cidade*:</label>
+                            <input id="cidade" type="text" id="fcidade" required>
                         </div>
         
                         <div id="state" class="form-item">
-                            <label id="festado">Estado*:</label>
-                            <input type="text" id="estado">
+                            <label for="festado">Estado*:</label>
+                            <input id="festado" type="text" id="estado" required>
                         </div>
         
                         <div id="fstreet-type" class="form-item">
-                            <label id="ftipologradouro">Tipo de Logradouro*:</label>
-                            <select id="tipologradouro">
+                            <label for="tipologradouro">Tipo de Logradouro*:</label>
+                            <select id="tipologradouro" required>
                                 <option selected disabled value="">Selecione</option>
                                 <option>Rua</option>
                                 <option>Avenida</option>
